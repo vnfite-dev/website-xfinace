@@ -85,9 +85,15 @@ export default function Header() {
           </div>
           <Button
             className={cn(
-              "h-12 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-md font-bold leading-none",
+              "h-12 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-md font-bold leading-none cursor-pointer",
               "bg-[#FF4142] hover:bg-red-700"
             )}
+            onClick={() => {
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth",
+              });
+            }}
           >
             <span className="leading-none">Tải ứng dụng</span>
           </Button>
