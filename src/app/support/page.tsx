@@ -26,7 +26,7 @@ const questionList = [
 
 export default function SupportPage() {
   return (
-    <HeaderImageLayout imageHead="/images/support-header.png">
+    <HeaderImageLayout imageHead="/images/support/support-header.png">
       <div className="max-w-[1280px] w-full h-full flex flex-col items-start justify-start gap-4 mx-auto mb-10">
         {/* <p className="ml-4">Trang chủ {">"} Hỗ trợ</p> */}
         <div className="w-full max-w-[900px] mx-auto mt-4 px-4">

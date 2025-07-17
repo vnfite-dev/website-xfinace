@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -9,11 +10,11 @@ import { useEffect, useRef, useState } from "react";
 const tab = [
   {
     name: "Giới thiệu",
-    href: "/",
+    href: "/about",
   },
   {
     name: "Dịch vụ",
-    href: "/about",
+    href: "/service",
   },
   {
     name: "Tin tức",
@@ -71,7 +72,14 @@ export default function Header() {
         ref={headerRef}
       >
         <div className="w-full flex items-center justify-between py-2 px-6 text-black scrollbar-ignore mx-auto">
-          <h3 className="text-xl font-bold">X-Finance</h3>
+          <Link href={"/"}>
+            <Image
+              src="/logoText.png"
+              alt="logo"
+              width={160}
+              height={48}
+            />
+          </Link>
           <div className="max-w-[550px] w-[50%] lg:w-full flex items-center justify-between">
             {tab.map((item, index) => (
               <Link
@@ -86,7 +94,7 @@ export default function Header() {
           <Button
             className={cn(
               "h-12 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-md font-bold leading-none cursor-pointer",
-              "bg-[#FF4142] hover:bg-red-700"
+              "bg-main-color hover:bg-red-700"
             )}
             onClick={() => {
               window.scrollTo({
