@@ -5,6 +5,7 @@ import Head from "next/head";
 import MessengerChatButton from "@/components/plugin/MessengerWidget";
 import ZaloChatWidget from "@/components/plugin/ZaloChatWidget";
 import Header from "@/components/molecules/Header";
+import HeaderImageLayout from "@/components/molecules/HeaderImageLayout";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
 						<ZaloChatWidget />
 					</div>
         <Header />
+      
         {children}
       </body>
     </html>
