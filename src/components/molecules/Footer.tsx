@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#FF4142] text-white py-14 px-12">
+    <footer className="w-full bg-main-color text-white py-14 px-12">
       <div className="max-w-[1280px] w-full mx-auto flex flex-row items-start justify-between">
         <div className="flex flex-col gap-8 w-[25%] xl:w-[30%]">
           <p className="font-bold text-4xl leading-14 uppercase">X-FINANCE</p>
-          <div className="font-light text-md">
+          <div className="font-light text-md text-justify">
             Chúng tôi tự hào nhà cung cấp các khoản vay nhanh chóng, linh hoạt,
             sử dụng tài sản đảm bảo để hỗ trợ khách hàng giải quyết nhu cầu tài
             chính một cách an toàn và hiệu quả.
@@ -15,7 +15,7 @@ export default function Footer() {
           <p className="font-bold text-md">xfinance.com.vn</p>
         </div>
 
-        <div className="gap-8 flex flex-col items-start justify-start h-full w-[25%] xl:w-[30%]">
+        <div className=" flex flex-col items-start justify-start h-full w-[25%] xl:w-[30%]">
           <div className="mb-8 gap-4 flex flex-col">
             <p className="font-bold text-xl leading-7">Địa chỉ</p>
             <p className="font-light text-md leading-6">
