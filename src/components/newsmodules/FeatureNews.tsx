@@ -3,15 +3,13 @@ import './StyleNewsCompo.css';
 
 export default function FeatureNews() {
     return (
-        <header suppressHydrationWarning={false}>
+        <header suppressHydrationWarning={false} >
             <div className="feature-view">
                 <div className="txt-header">Tin tức nổi bật</div>
                 <div className='view-content'>
                     <div className='view-left'>
-                        {/* <div className='image-left'>
-                        </div> */}
                         <Image
-                            src={'/images/contact1.png'}
+                            src={'/images/contact3.png'}
                             alt="Image"
                             className='img-left'
                             width={220}
