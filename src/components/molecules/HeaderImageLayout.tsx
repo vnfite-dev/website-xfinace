@@ -7,11 +7,11 @@ type HeaderImageLayoutProps = {
 
 export default function HeaderImageLayout({ children, imageHead }: HeaderImageLayoutProps) {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-start gap-4 p-4">
+    <div className="w-full h-full flex flex-col items-start justify-start gap-4">
       <Image
         src={imageHead}
         alt="Header Image"
-        className="w-full h-auto object-cover rounded-lg"
+        className="w-full h-auto object-cover"
         width={1280}
         height={550}
       />

@@ -6,6 +6,7 @@ import MessengerChatButton from "@/components/plugin/MessengerWidget";
 import ZaloChatWidget from "@/components/plugin/ZaloChatWidget";
 import Header from "@/components/molecules/Header";
 import HeaderImageLayout from "@/components/molecules/HeaderImageLayout";
+import Footer from "@/components/molecules/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,7 +33,7 @@ export default function RootLayout({
           content="img-src https: data:; upgrade-insecure-requests"
         />
       </Head>
-      <body className={`${inter.variable} antialiased relative`}>
+      <body className={`${inter.variable} relative`}>
         <div className="fixed bottom-0 right-0 z-50">
 						<MessengerChatButton />
 						<ZaloChatWidget />
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
       
         {children}
+        <Footer />
       </body>
     </html>
   );
