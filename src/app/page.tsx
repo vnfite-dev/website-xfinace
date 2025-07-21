@@ -1,6 +1,7 @@
 import HomeLoanPackage from "@/components/molecules/HomeLoanPackage";
 import HomeCounter from "@/components/molecules/HomeCounter";
 import HomeTitle from "@/components/molecules/HomeTitle";
+import HomePartner from "@/components/molecules/HomePartner";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HomeTitle />
       <HomeCounter />
       <HomeLoanPackage />
+      <HomePartner />
     </div>
   );
 }
