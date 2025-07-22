@@ -56,7 +56,19 @@
   height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
   object-fit: cover;
   border-radius: 8px;
-  aspect-ratio: 1.5;
+  aspect-ratio: 3 / 4;
+  max-height: 390px; 
+  /* max-width: 292px; */
+}
+
+.item video {
+  width: 25vw; /* Mỗi bức ảnh chiếm 25% chiều rộng màn hình */
+  height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 3 / 4;
+  max-height: 390px; 
+  min-width: 200px;
 }
 
 .item .text-overlay {
