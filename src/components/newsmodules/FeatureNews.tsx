@@ -9,11 +9,11 @@ export default function FeatureNews() {
                 <div className='view-content'>
                     <div className='view-left'>
                         <Image
-                            src={'/images/contact3.png'}
+                            src={'/images/contact1.png'}
                             alt="Image"
                             className='img-left'
-                            width={220}
-                            height={160}
+                            width={512}
+                            height={512}
                         />
                         <div className='sub-left-txt-content'>
                             <div className='txt-left-feature-header'>
