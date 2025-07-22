@@ -1,5 +1,7 @@
+'use client';
 import Image from 'next/image';
 import './XFinaceNews.css';
+import { useRef, useState } from 'react';
 
 export default function XFinaceNews() {
     const items = [
@@ -43,42 +45,64 @@ export default function XFinaceNews() {
 
     return (
         <header suppressHydrationWarning={false}>
- <div className='view-container'>
+            <div className='view-container'>
                 <div className="txt-header"><span style={{ color: '#FF4142' }}>X-Finance</span> và khách hàng</div>
                 <div className='scroll-container'>
-                    {items.map((item, index) => (
-                        <div key={index} className='item'>
-                            <Image
-                                src={item.src}
-                                alt={item.alt}
-                                width={400}
-                                height={200}
-                                className='img-scroll'
-                            />
-                            {item.overlayText && (
-                                <div className='view-overlay'>
-                                    <div className='txt-header-overlay'>
-                                        {item.overlayText}
-                                    </div>
-                                    {item.time && (
-                                        <div className='view-text-overlay'>
-                                            <Image
-                                                src={'/images/timeIcon.png'}
-                                                alt="Image"
-                                                width={24}
-                                                height={24}
-                                                className='time-icon'
-                                            />
-                                            <div className="text-overlay">{item.time}</div>
+                {items.map((item, index) => {
+                        const videoRef = useRef<HTMLVideoElement>(null);
+                        const [isPlaying, setIsPlaying] = useState(false);
+
+                        const handleTogglePlay = () => {
+                            const video = videoRef.current;
+                            if (!video) return;
+
+                            if (video.paused) {
+                                video.play();
+                                setIsPlaying(true);
+                            } else {
+                                video.pause();
+                                setIsPlaying(false);
+                            }
+                        };
+
+                        return (
+                            <div key={index} className='item'>
+                                <video
+                                    ref={videoRef}
+                                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                                    width={200}
+                                    height={400}
+                                    className="img-scroll"
+                                    muted
+                                    playsInline
+                                    onClick={handleTogglePlay}
+                                    style={{ cursor: 'pointer' }}
+                                />
+                                {item.overlayText && (
+                                    <div className='view-overlay'>
+                                        <div className='txt-header-overlay'>
+                                            {item.overlayText}
                                         </div>
-                                    )}
-                                </div>
-                            )}
-                        </div>
-                    ))}
+                                        {item.time && (
+                                            <div className='view-text-overlay'>
+                                                <Image
+                                                    src={'/images/timeIcon.png'}
+                                                    alt="Image"
+                                                    width={24}
+                                                    height={24}
+                                                    className='time-icon'
+                                                />
+                                                <div className="text-overlay">{item.time}</div>
+                                            </div>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </header>
-           
+
     );
 }
