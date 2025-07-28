@@ -9,7 +9,7 @@ const page = () => {
             <div className="w-full h-full  flex flex-col justify-center items-center ">
                 <div className="w-[80%] h-fit  flex flex-col justify-center items-center ">
                     <div className="w-full h-auto flex justify-between items-center">
-                        <div className="w-[168px] h-[30px] font-normal text-sm md:text-xl tracking-normal leading-[30px] text-center text-[#374151]  ">
+                        <div className="w-[168px] h-[30px] font-normal text-sm md:text-xl tracking-normal leading-[30px] text-left md:text-center text-[#374151]  ">
                             22/07/2025 17:46
                         </div>
                         <div className="w-[115px] h-12 rounded-3xl py-2 px-5 bg-[#C40000] flex justify-between items-center gap-2">
@@ -21,7 +21,7 @@ const page = () => {
                                     height={32}
                                 />
                             </div>
-                            <div className="w-[35px] h-[30px] font-bold text-xl md:text-2xl leading-[30px] tracking-normal text-center text-white">
+                            <div className="w-[35px] h-[30px] font-bold text-xl  leading-[30px] tracking-normal text-center text-white">
                                 Gửi
                             </div>
                         </div>
@@ -31,7 +31,7 @@ const page = () => {
                         doanh nghiệp có chỉ số phát triển bền vững tốt nhất thị
                         trường
                     </div>
-                    <div className="w-[80%] h-0.5 rounded-xs border-[#E5E7EB] bg-[#E5E7EB]"></div>
+                    <div className="w-[80%] h-0.5 rounded-xs border-[#E5E7EB] bg-[#E5E7EB] my-4"></div>
                     <div className="w-full h-auto font-normal text-sm md:text-xl leading-[30px] tracking-normal text-justify">
                         <div>
                             Ngày 21/7/2025, Sở Giao dịch Chứng khoán Thành phố
