@@ -62,13 +62,13 @@ const page = () => {
                             xếp hạng cao nhất trong Top 1000 doanh nghiệp đại
                             chúng lớn nhất toàn cầu.
                         </div>
-                        <div className="w-full h-auto ">
+                        <div className="w-full h-auto py-5 ">
                             <Image
                                 src="/images/news/co-so-moi.png"
                                 alt="picture"
                                 width={472}
                                 height={600}
-                                className="w-full h-auto object-cover "
+                                className="w-full h-auto object-cover  "
                             />
                         </div>
                         <div className="w-full h-fit font-normal text-sm md:text-xl leading-[30px] tracking-normal text-justify text-[#374151]">
@@ -113,7 +113,7 @@ const page = () => {
                                 nợ; trong đó 84,7% được phân bổ cho các dự án
                                 năng lượng tái tạo và năng lượng sạch.
                             </div>
-                            <div className="w-full h-auto">
+                            <div className="w-full h-auto py-5">
                                 <Image
                                     src="/images/news/dich-vu-moi.png"
                                     alt="picture"
@@ -124,7 +124,9 @@ const page = () => {
                             </div>
                             <div className="w-full h-auto text-sm leading-0 md:text-xl leading-[30px] tracking-normal font-normal">
                                 <div className="flex">
-                                    <div className="font-bold mr-2.5">Thời gian:</div>
+                                    <div className="font-bold mr-2.5">
+                                        Thời gian:
+                                    </div>
                                     <span> 20/02 - 28/02</span>
                                 </div>
                                 <div className="font-bold">Nội dung:</div>
