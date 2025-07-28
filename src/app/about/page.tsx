@@ -29,7 +29,7 @@ const vimiList = [
 
 export default function AboutPage() {
   return (
-    <div className="max-w-[1280px] w-full h-full flex flex-col items-start justify-start gap-4 mx-auto mb-10">
+    <div className="max-w-[1280px] w-full h-full flex flex-col items-start justify-start gap-2 mx-auto mb-10">
       <div className="w-full flex flex-row items-center justify-between px-8 mt-4 sm:mt-10 mb-6 gap-4">
         <div>
           <p className="font-bold text-xl sm:text-3xl lg:text-5xl leading-8 sm:leading-10 lg:leading-16 text-main-color">
@@ -101,13 +101,13 @@ export default function AboutPage() {
           toàn giao thương tài chính, tạo lợi ích cho các bên đồng thời tạo sự
           phát triển bền vững cho xã hội.
         </p>
-        <div className="max-w-[250px] sm:max-w-full w-full flex flex-col sm:flex-row sm:flex-wrap space-x-0 sm:space-x-8 space-y-1 sm:space-y-0 items-center justify-center mx-auto">
+        <div className="max-w-[250px] sm:max-w-full w-full flex flex-col md:flex-row flex-nowrap md:flex-wrap space-x-0 md:space-x-8 space-y-1 md:space-y-0 items-center justify-center mx-auto">
           {vimiList.map((item, index) => (
             <div
               key={index}
               className={cn(
-                "max-w-[356px] flex flex-row items-center justify-between gap-4 text-[#374151] pr-0 sm:pr-4 mt-4",
-                index === 4 ? "w-full" : "w-full sm:w-auto"
+                "max-w-[340px] flex flex-row items-center justify-between gap-4 text-[#374151] pr-0 sm:pr-4 mt-4",
+                index === 4 ? "w-full" : "w-full md:w-auto"
               )}
             >
               <div>
