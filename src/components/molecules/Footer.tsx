@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="flex flex-row items-center justify-start gap-4 mt-4">
               <div className="h-20 w-20 sm:h-32 sm:w-32 bg-white"></div>
               <div className="flex flex-col items-start justify-between h-20 sm:h-32">
-                <Button className="h-9 sm:h-12 w-36 sm:w-52 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-md font-bold leading-none bg-[#1F2937] hover:bg-gray-800 cursor-pointer shadow-custom">
+                <Button className="h-9 sm:h-12 w-36 sm:w-52 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-[16px] font-bold leading-none bg-[#1F2937] hover:bg-gray-800 cursor-pointer shadow-custom">
                   <Image
                     src={"/icons/chplay.svg"}
                     alt="download android"
@@ -52,7 +52,7 @@ export default function Footer() {
                   />
                   <span className="leading-none">Download Android</span>
                 </Button>
-                <Button className="h-9 sm:h-12 w-36 sm:w-full rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-md font-bold leading-none bg-grad hover:bg-[#FF6262] cursor-pointer shadow-custom mt-2">
+                <Button className="h-9 sm:h-12 w-36 sm:w-full rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-[16px] font-bold leading-none bg-ios hover:bg-[#FF6262] cursor-pointer shadow-custom mt-2">
                   <Image
                     src={"/icons/applestore.svg"}
                     alt="download android"

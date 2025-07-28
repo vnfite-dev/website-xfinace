@@ -53,7 +53,7 @@ export default function HomeLoanPackage() {
       <div className="max-w-[700px]">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-8 sm:leading-14 text-center">
           Các gói vay online của{" "}
-          <span className="text-[#C40000]">X-Finance</span>
+          <span className="text-main-color">X-Finance</span>
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 mt-4 md:mt-8">
           {loanPackagesList.map((item, index) => (
@@ -81,7 +81,7 @@ export default function HomeLoanPackage() {
           Bạn đang gặp khó khăn về tài chính{" "}
         </p>
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
-          <span className="text-[#C40000]">X-Finance</span> sẽ giúp bạn
+          <span className="text-main-color">X-Finance</span> sẽ giúp bạn
         </p>
         <div className="bg-main-color w-full relative mt-6 sm:mt-14 md:mt-20 h-[260px] sm:h-[300px] md:h-[500px] lg:h-[600px]">
           <div className="mt-20 absolute -top-[100px] sm:-top-[200px] right-3/5 sm:right-1/2">
@@ -112,7 +112,7 @@ export default function HomeLoanPackage() {
 
       <div className="max-w-[840px] mt-10 sm:mt-14 md:mt-20">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
-          <span className="text-[#C40000]">X-Finance</span> giải quyết vấn đề
+          <span className="text-main-color">X-Finance</span> giải quyết vấn đề
           tài chính
         </p>
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
@@ -188,7 +188,7 @@ export default function HomeLoanPackage() {
 
       <div className="mt-10 md:mt-20 max-w-[1164px] w-full mx-auto">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-14 text-center">
-          Mọi người nói gì về <span className="text-[#C40000]">X-Finance</span>
+          Mọi người nói gì về <span className="text-main-color">X-Finance</span>
         </p>
 
         <div>
