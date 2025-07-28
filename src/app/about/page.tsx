@@ -1,5 +1,12 @@
+import AboutInfo from "@/components/molecules/AboutInfo";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Giới thiệu | X-Finance",
+  description: "Giới thiệu về X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
+};
 
 const aboutList = [
   "Vận hành theo mô hình P2P minh bạch, tuân thủ pháp luật",
@@ -14,7 +21,7 @@ export default function AboutPage() {
     <div className="max-w-[1280px] w-full h-full flex flex-col items-start justify-start gap-4 mx-auto mb-10">
       <div className="w-full flex flex-row items-center justify-between px-8 mt-4 sm:mt-10 mb-6 gap-4">
         <div>
-          <p className="font-bold text-xl sm:text-3xl lg:text-5xl leading-8 sm:leading-10 lg:leading-16 text-[#C40000]">
+          <p className="font-bold text-xl sm:text-3xl lg:text-5xl leading-8 sm:leading-10 lg:leading-16 text-main-color">
             X-FINANCE
           </p>
           <p className="font-bold text-xl sm:text-3xl lg:text-5xl leading-8 sm:leading-10 lg:leading-16 text-[#1F2937]">{`“Vay chất, sống thật”`}</p>
@@ -54,7 +61,7 @@ export default function AboutPage() {
             </Button>
           </div>
         </div>
-        <div className="hidden sm:flex w-[60%] lg:w-[45%] relative">
+        <div className="hidden sm:flex w-[60%] lg:w-[45%] relative z-10">
           <div className="w-[250px] md:w-[320px] lg:w-[435px] bg-main-color rounded-full aspect-[1/1] mx-auto"></div>
           <Image
             src="/images/about/about.png"
@@ -68,8 +75,9 @@ export default function AboutPage() {
 
       <div className="w-full">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center mt-4 sm:mt-8 lg:mt-12">
-          Giới thiệu về <span className="text-[#C40000]">X-Finance</span>
+          Giới thiệu về <span className="text-main-color">X-Finance</span>
         </p>
+        <AboutInfo />
       </div>
     </div>
   );

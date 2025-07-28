@@ -86,9 +86,9 @@ export default function Header() {
       {isFixed && <div className="h-[48px] md:h-[72px] w-full"></div>}
       <div
         className={cn(
-          "relative w-full transition-all duration-400",
+          "relative w-full transition-all duration-400 z-50",
           isFixed
-            ? "fixed top-0 left-0 z-50 bg-white shadow-md"
+            ? "fixed top-0 left-0 bg-white shadow-md"
             : "bg-transparent"
         )}
         ref={headerRef}

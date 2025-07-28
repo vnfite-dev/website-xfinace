@@ -1,4 +1,10 @@
 import HeaderImageLayout from "@/components/molecules/HeaderImageLayout";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Hỗ trợ",
+    description: "Hỗ trợ khách hàng trong việc sử dụng sản phẩm vay có thế chấp - X-Finance",
+}
 
 const questionList = [
     {
