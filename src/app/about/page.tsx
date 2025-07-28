@@ -1,11 +1,14 @@
-import AboutInfo from "@/components/molecules/AboutInfo";
+import AboutInfo from "@/app/about/AboutInfo";
+import YoutubeShort from "@/app/about/YoutubeShort";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Giới thiệu | X-Finance",
-  description: "Giới thiệu về X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
+  title: "Giới thiệu",
+  description:
+    "Giới thiệu về X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
 };
 
 const aboutList = [
@@ -14,6 +17,14 @@ const aboutList = [
   "Thế chấp tài sản linh hoạt, an toàn",
   "Giải ngân nhanh, thủ tục đơn giản",
   "Được người dùng đánh giá cao, phản hồi tích cực",
+];
+
+const vimiList = [
+  "Khách hàng là trung tâm",
+  "Đoàn kết và phát triển",
+  "Nhiệt huyết và đổi mới",
+  "Tin cậy và trách nhiệm",
+  "An sinh xã hội hướng tới lợi ích cộng đồng",
 ];
 
 export default function AboutPage() {
@@ -78,6 +89,50 @@ export default function AboutPage() {
           Giới thiệu về <span className="text-main-color">X-Finance</span>
         </p>
         <AboutInfo />
+      </div>
+
+      <div className="w-full p-4">
+        <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center mt-4 sm:mt-8 lg:mt-12">
+          Tầm nhìn và sứ mệnh của{" "}
+          <span className="text-main-color">X-Finance</span>
+        </p>
+        <p className="text-sm sm:text-[16px] md:text-lg lg:text-xl my-4 md:my-10 text-center">
+          Là sợi dây kết nối giữa nhà đầu tư và nhà huy động, tạo ra sân chơi an
+          toàn giao thương tài chính, tạo lợi ích cho các bên đồng thời tạo sự
+          phát triển bền vững cho xã hội.
+        </p>
+        <div className="max-w-[250px] sm:max-w-full w-full flex flex-col sm:flex-row sm:flex-wrap space-x-0 sm:space-x-8 space-y-1 sm:space-y-0 items-center justify-center mx-auto">
+          {vimiList.map((item, index) => (
+            <div
+              key={index}
+              className={cn(
+                "max-w-[356px] flex flex-row items-center justify-between gap-4 text-[#374151] pr-0 sm:pr-4 mt-4",
+                index === 4 ? "w-full" : "w-full sm:w-auto"
+              )}
+            >
+              <div>
+                <Image
+                  src={`/images/about/View${index + 1}.png`}
+                  alt="checkpoint"
+                  width={64}
+                  height={64}
+                  className="w-full"
+                />
+              </div>
+              <p className="font-bold text-sm sm:text-[16px] lg:text-lg w-[80%]">
+                {item}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-red w-full">
+        <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center mt-4 sm:mt-8 lg:mt-12">
+          Khám phá về{" "}
+          <span className="text-main-color">X-Finance</span>
+        </p>
+        <YoutubeShort />
       </div>
     </div>
   );
