@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     absolute: "X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
   },
   description: "X-Finance - Sản phẩm cho vay có thế chấp của VNFITE",
+  icons: {
+    icon: "/logo.svg",
+  }
 };
 
 const inter = Inter({

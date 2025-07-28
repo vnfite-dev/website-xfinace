@@ -14,7 +14,7 @@ const tab = [
   },
   {
     name: "Dịch vụ",
-    href: "/service",
+    href: "/services",
   },
   {
     name: "Tin tức",
