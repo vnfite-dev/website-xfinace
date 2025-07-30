@@ -41,7 +41,7 @@ export default function RootLayout({
           content="img-src https: data:; upgrade-insecure-requests"
         />
       </Head>
-      <body className={`${inter.variable} relative`}>
+      <body className={`${inter.className} relative`}>
         <div className="fixed bottom-0 right-0 z-50">
 						<MessengerChatButton />
 						<ZaloChatWidget />

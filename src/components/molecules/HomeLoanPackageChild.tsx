@@ -1,21 +1,21 @@
-import Image from "next/image";
+import { CarIcon, MotobikeIcon, OtherIcon, RedbookIcon } from "../../../public/icons/DynamicIcon";
 
 const loanPackagesList = [
   {
     title: "Thế chấp đăng ký xe máy",
-    icon: "/icons/home/motobike.svg",
+    icon: <MotobikeIcon color="#FFFFFF" />,
   },
   {
     title: "Thế chấp đăng ký oto",
-    icon: "/icons/home/car.svg",
+    icon: <CarIcon color="#FFFFFF" />,
   },
   {
     title: "Thế chấp sổ đỏ",
-    icon: "/icons/home/redbook.svg",
+    icon: <RedbookIcon color="#FFFFFF" />,
   },
   {
     title: "Khác",
-    icon: "/icons/home/other.svg",
+    icon: <OtherIcon color="#FFFFFF" />,
   },
 ];
 
@@ -33,13 +33,7 @@ export default function HomeLoanPackageChild() {
             className="flex flex-col items-center justify-start p-4 rounded-lg max-w-44"
           >
             <div className="p-2 md:p-6 bg-main-color rounded-full w-14 h-14 md:h-24 md:w-24 flex items-center justify-center mb-4">
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={56}
-                height={56}
-                className="w-14 h-14"
-              />
+              {item.icon}
             </div>
             <p className="text-md md:text-lg text-center">{item.title}</p>
           </div>
