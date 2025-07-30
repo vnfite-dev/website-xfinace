@@ -36,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        <meta name="robots" content="index, follow"></meta>
         <meta
           httpEquiv="Content-Security-Policy"
           content="img-src https: data:; upgrade-insecure-requests"
