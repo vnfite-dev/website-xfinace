@@ -20,7 +20,7 @@ export default function HomeTitle() {
         </p>
       </div>
       <div className="flex flex-row items-center justify-between w-full max-w-[300px] sm:max-w-[450px] mx-auto gap-1 sm:gap-4">
-        <Button className="h-9 sm:h-12 w-36 sm:w-52 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-[16px] font-bold leading-none bg-[#1F2937] hover:bg-gray-800 cursor-pointer shadow-custom">
+        <Button className="h-9 sm:h-12 w-36 sm:w-52 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-[16px] font-bold leading-none bg-[#374151] cursor-pointer shadow-custom">
           <Image
             src={"/icons/chplay.svg"}
             alt="download android"
@@ -29,7 +29,7 @@ export default function HomeTitle() {
           />
           <span className="leading-none">Download Android</span>
         </Button>
-        <Button className="h-9 sm:h-12 w-36 sm:w-52 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-[16px] font-bold leading-none bg-grad hover:bg-[#FF6262] cursor-pointer shadow-custom">
+        <Button className="h-9 sm:h-12 w-36 sm:w-52 rounded-3xl px-6 py-3 text-center text-white flex flex-row items-center justify-center gap-2 text-[10px] sm:text-[16px] font-bold leading-none bg-main-color cursor-pointer shadow-custom">
           <Image
             src={"/icons/applestore.svg"}
             alt="download android"
