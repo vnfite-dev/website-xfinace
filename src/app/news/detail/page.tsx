@@ -26,13 +26,13 @@ const page = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full h-auto font-bold text-xl md:text-[32px] leading-12 tracking-normal  text-center text-[#374151]">
+                    <div className="w-full h-auto font-bold text-xl md:text-[32px] leading-6 md:leading-12 tracking-normal  text-center text-[#374151]">
                         X-FINANCE lần thứ ba liên tiếp ghi danh trong top 20
                         doanh nghiệp có chỉ số phát triển bền vững tốt nhất thị
                         trường
                     </div>
-                    <div className="w-[80%] h-0.5 rounded-xs border-[#E5E7EB] bg-[#E5E7EB] my-4"></div>
-                    <div className="w-full h-auto font-normal text-sm md:text-xl leading-[30px] tracking-normal text-justify">
+                    <div className="w-[80%] h-0.5 rounded-xs border-[#E5E7EB] bg-[#E5E7EB] my-4 md:my-8"></div>
+                    <div className="w-full h-auto font-normal text-sm md:text-xl leading-5 md:leading-[30px] tracking-normal text-justify">
                         <div>
                             Ngày 21/7/2025, Sở Giao dịch Chứng khoán Thành phố
                             Hồ Chí Minh (HOSE) đã công bố danh mục cổ phiếu
@@ -71,7 +71,7 @@ const page = () => {
                                 className="w-full h-auto object-cover  "
                             />
                         </div>
-                        <div className="w-full h-fit font-normal text-sm md:text-xl leading-[30px] tracking-normal text-justify text-[#374151]">
+                        <div className="w-full h-fit font-normal text-sm md:text-xl leading-5 md:leading-[30px] tracking-normal text-justify text-[#374151]">
                             <div>
                                 Bên cạnh đó, X-Finance ghi đậm dấu ấn tiên phong
                                 trong việc phát huy trách nhiệm xã hội với cộng
@@ -122,9 +122,9 @@ const page = () => {
                                     className="w-full h-auto object-cover "
                                 />
                             </div>
-                            <div className="w-full h-auto text-sm leading-0 md:text-xl leading-[30px] tracking-normal font-normal">
+                            <div className="w-full h-auto text-sm leading-0 md:text-xl leading-5 md:leading-[30px] tracking-normal font-normal">
                                 <div className="flex">
-                                    <div className="font-bold mr-2.5">
+                                    <div className="font-bold mr-2.5 ">
                                         Thời gian:
                                     </div>
                                     <span> 20/02 - 28/02</span>
@@ -179,93 +179,100 @@ const page = () => {
                         Tin liên quan
                     </div>
                     <div className="w-full grid grid-cols-1 md:grid-cols-3  gap-4  mt-10 pb-20">
-                        <div>
-                            <div className="w-full h-auto">
+                        <div className="flex md:flex-col ">
+                            <div className="w-50 md:w-full h-fit">
                                 <Image
                                     src="/images/news/pic-1.png"
                                     alt="picture"
-                                    width={338}
-                                    height={338}
-                                    className="w-full h-auto object-cover "
+                                    width={50}
+                                    height={50}
+                                    className="w-50 md:w-full h-fit object-cover  "
                                 />
                             </div>
-                            <div className="w-full">
-                                <div className="font-bold text-sm md:text-[18px] leading-[27px] tracking-normal text-justify text-[#374151]">
-                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH,
-                                    X-Finance hợp tác với tập đoàn ABC đánh dấu
-                                    bước ngoặt trong ngành ABC song
-                                </div>
-                                <div className="flex">
-                                    <Image
-                                        src={'/icons/news/time.svg'}
-                                        alt="time"
-                                        width={24}
-                                        height={24}
-                                    />
-                                    <div className=" h-6 font-normal text-sm md:text-[16px] leading-6 tracking-normal text-[#4B5563]">
-                                        12:20 12/12/2025
+                            <div className="w-full flex flex-col justify-center">
+                                <div className='ml-2'>
+                                    <div className="font-bold text-sm md:text-[18px] leading-6 md:leading-[27px] tracking-normal text-justify text-[#374151]">
+                                        Chiều 10/12/2025 tại Hội Nghị quốc tế
+                                        HYGH, X-Finance hợp tác với tập đoàn ABC
+                                        đánh dấu bước ngoặt trong ngành ABC song
+                                    </div>
+                                    <div className="flex my-2">
+                                        <Image
+                                            src={'/icons/news/time.svg'}
+                                            alt="time"
+                                            width={24}
+                                            height={24}
+                                        />
+                                        <div className=" h-6 font-normal text-sm md:text-[16px] leading-6 tracking-normal text-[#4B5563]">
+                                            12:20 12/12/2025
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div className="w-full h-auto">
+                        <div className="flex md:flex-col ">
+                            <div className="w-50 md:w-full h-fit">
                                 <Image
                                     src="/images/news/pic-2.png"
                                     alt="picture"
-                                    width={338}
-                                    height={338}
-                                    className="w-full h-auto object-cover "
+                                    width={50}
+                                    height={50}
+                                    className="w-50 md:w-full h-fit object-cover  "
                                 />
                             </div>
-                            <div className="w-full">
-                                <div className="font-bold text-sm md:text-[18px] leading-[27px] tracking-normal text-justify text-[#374151]">
-                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH,
-                                    X-Finance hợp tác với tập đoàn ABC đánh dấu
-                                    bước ngoặt trong ngành ABC song
-                                </div>
-                                <div className="flex">
-                                    <Image
-                                        src={'/icons/news/time.svg'}
-                                        alt="time"
-                                        width={24}
-                                        height={24}
-                                    />
-                                    <div className=" h-6 font-normal text-sm md:text-[16px] leading-6 tracking-normal text-[#4B5563]">
-                                        12:20 12/12/2025
+                            <div className="w-full flex flex-col justify-center">
+                                <div className='ml-2'>
+                                    <div className="font-bold text-sm md:text-[18px] leading-6 md:leading-[27px] tracking-normal text-justify text-[#374151]">
+                                        Chiều 10/12/2025 tại Hội Nghị quốc tế
+                                        HYGH, X-Finance hợp tác với tập đoàn ABC
+                                        đánh dấu bước ngoặt trong ngành ABC song
+                                    </div>
+                                    <div className="flex my-2">
+                                        <Image
+                                            src={'/icons/news/time.svg'}
+                                            alt="time"
+                                            width={24}
+                                            height={24}
+                                        />
+                                        <div className=" h-6 font-normal text-sm md:text-[16px] leading-6 tracking-normal text-[#4B5563]">
+                                            12:20 12/12/2025
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div className="w-full h-auto">
+                        <div className="flex md:flex-col ">
+                            <div className="w-50 md:w-full h-fit">
                                 <Image
                                     src="/images/news/pic-3.png"
                                     alt="picture"
-                                    width={338}
-                                    height={338}
-                                    className="w-full h-auto object-cover "
+                                    width={50}
+                                    height={50}
+                                    className="w-50 md:w-full h-fit object-cover  "
                                 />
                             </div>
-                            <div className="w-full">
-                                <div className="font-bold text-sm md:text-[18px] leading-[27px] tracking-normal text-justify text-[#374151]">
-                                    Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH,
-                                    X-Finance hợp tác với tập đoàn ABC đánh dấu
-                                    bước ngoặt trong ngành ABC song
-                                </div>
-                                <div className="flex">
-                                    <Image
-                                        src={'/icons/news/time.svg'}
-                                        alt="time"
-                                        width={24}
-                                        height={24}
-                                    />
-                                    <div className=" h-6 font-normal text-sm md:text-[16px] leading-6 tracking-normal text-[#4B5563]">
-                                        12:20 12/12/2025
+                            <div className="w-full flex flex-col justify-center">
+                                <div className='ml-2'>
+                                    <div className="font-bold text-sm md:text-[18px] leading-6 md:leading-[27px] tracking-normal text-justify text-[#374151]">
+                                        Chiều 10/12/2025 tại Hội Nghị quốc tế
+                                        HYGH, X-Finance hợp tác với tập đoàn ABC
+                                        đánh dấu bước ngoặt trong ngành ABC song
+                                    </div>
+                                    <div className="flex my-2">
+                                        <Image
+                                            src={'/icons/news/time.svg'}
+                                            alt="time"
+                                            width={24}
+                                            height={24}
+                                        />
+                                        <div className=" h-6 font-normal text-sm md:text-[16px] leading-6 tracking-normal text-[#4B5563]">
+                                            12:20 12/12/2025
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
