@@ -15,7 +15,8 @@ export default function FeatureNews() {
                             width={512}
                             height={512}
                         />
-                        <div className='sub-left-txt-content'>
+                         <div className='view-sub-left-txt-content'>
+                         <div className='sub-left-txt-content'>
                             <div className='txt-left-feature-header'>
                                 Chiều 10/12/2025 tại Hội Nghị quốc tế HYGH, X-Finance hợp tác với tập đoàn ABC đánh dấu bước ngoặt trong ngành ABC song
                             </div>
@@ -31,7 +32,7 @@ export default function FeatureNews() {
                                 <div className='txt-time-left'>12:20 12/12/2025</div>
                             </div>
                         </div>
-
+                         </div>
                     </div>
                     <div className='view-right'>
                         <div className='sub-content-right'>

@@ -26,7 +26,7 @@
 }
 
 .scroll-container::-webkit-scrollbar {
-  height: 2px; /* Thay đổi chiều cao thanh cuộn ngang */
+  height: 6px; /* Thay đổi chiều cao thanh cuộn ngang */
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
@@ -61,7 +61,7 @@
   /* max-width: 292px; */
 }
 
-.item video {
+.item iframe {
   width: 25vw; /* Mỗi bức ảnh chiếm 25% chiều rộng màn hình */
   height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
   object-fit: cover;
@@ -125,7 +125,7 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .item img {
+  .item iframe {
     width: 30vw; /* Tăng kích thước ảnh lên 30% khi màn hình nhỏ hơn 1200px */
   }
   .item  .view-overlay .txt-header-overlay {
@@ -135,7 +135,7 @@
 }
 
 @media (max-width: 768px) {
-  .item img {
+  .item iframe {
     width: 45vw; /* Tăng kích thước ảnh lên 45% khi màn hình nhỏ hơn 768px */
   }
   .item  .view-overlay .txt-header-overlay {
@@ -144,9 +144,9 @@
   }
 }
 
-@media (max-width: 480px) {
-  .item img {
-    width: 80vw; /* Tăng kích thước ảnh lên 80% khi màn hình nhỏ hơn 480px */
+@media (max-width: 640px) {
+  .item iframe {
+    width: 90vw; /* Tăng kích thước ảnh lên 80% khi màn hình nhỏ hơn 480px */
   }
   .item  .view-overlay .txt-header-overlay {
     font-size: 10px ;

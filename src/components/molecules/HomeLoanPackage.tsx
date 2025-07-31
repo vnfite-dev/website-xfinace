@@ -1,24 +1,6 @@
+import HomeLoanPackageChild from "@/components/molecules/HomeLoanPackageChild";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-
-const loanPackagesList = [
-  {
-    title: "Thế chấp đăng ký xe máy",
-    icon: "/icons/home/motobike.svg",
-  },
-  {
-    title: "Thế chấp đăng ký oto",
-    icon: "/icons/home/car.svg",
-  },
-  {
-    title: "Thế chấp sổ đỏ",
-    icon: "/icons/home/redbook.svg",
-  },
-  {
-    title: "Khác",
-    icon: "/icons/home/other.svg",
-  },
-];
 
 const commentList = [
   {
@@ -50,38 +32,14 @@ const commentList = [
 export default function HomeLoanPackage() {
   return (
     <div className="w-full mx-auto flex flex-col items-center justify-center">
-      <div className="max-w-[700px]">
-        <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-8 sm:leading-14 text-center">
-          Các gói vay online của{" "}
-          <span className="text-[#C40000]">X-Finance</span>
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 mt-4 md:mt-8">
-          {loanPackagesList.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-start p-4 rounded-lg max-w-44"
-            >
-              <div className="p-2 md:p-6 bg-main-color rounded-full w-14 h-14 md:h-24 md:w-24 flex items-center justify-center mb-4">
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  width={56}
-                  height={56}
-                  className="w-14 h-14"
-                />
-              </div>
-              <p className="text-md md:text-lg text-center">{item.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
+      <HomeLoanPackageChild />
+      
       <div className="mt-10 w-full">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
           Bạn đang gặp khó khăn về tài chính{" "}
         </p>
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
-          <span className="text-[#C40000]">X-Finance</span> sẽ giúp bạn
+          <span className="text-main-color">X-Finance</span> sẽ giúp bạn
         </p>
         <div className="bg-main-color w-full relative mt-6 sm:mt-14 md:mt-20 h-[260px] sm:h-[300px] md:h-[500px] lg:h-[600px]">
           <div className="mt-20 absolute -top-[100px] sm:-top-[200px] right-3/5 sm:right-1/2">
@@ -112,7 +70,7 @@ export default function HomeLoanPackage() {
 
       <div className="max-w-[840px] mt-10 sm:mt-14 md:mt-20">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
-          <span className="text-[#C40000]">X-Finance</span> giải quyết vấn đề
+          <span className="text-main-color">X-Finance</span> giải quyết vấn đề
           tài chính
         </p>
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-6 md:leading-14 text-center">
@@ -188,7 +146,7 @@ export default function HomeLoanPackage() {
 
       <div className="mt-10 md:mt-20 max-w-[1164px] w-full mx-auto">
         <p className="font-bold text-lg sm:text-2xl md:text-4xl leading-14 text-center">
-          Mọi người nói gì về <span className="text-[#C40000]">X-Finance</span>
+          Mọi người nói gì về <span className="text-main-color">X-Finance</span>
         </p>
 
         <div>

@@ -63,18 +63,23 @@
 	height: 100%;
 }
 
+.view-sub-left-txt-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding:12px;
+}
+
 .sub-left-txt-content {
     display: flex;
     flex-direction: column;
     gap: 28px;
-    position: absolute;
-    bottom: 12px;
-    left: 10px;
     padding-right: 24px;
     border-width: 1px;
     border-color: #FFFFFF;
     border-radius: 8px;
-    width: 96.5%;
+    width: 100%;
     padding:12px;
 }
 
@@ -131,8 +136,8 @@
 
 @media screen and (max-width: 2700px) {
     .feature-view {
-        padding-right: 20vw;
-        padding-left: 20vw;
+        padding-right: 15vw;
+        padding-left: 15vw;
     }
     .image-left {
         height: 400px;
@@ -205,7 +210,7 @@
     }
 
     .txt-feature-header {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
         display: -webkit-box;
         -webkit-line-clamp: 4; /* Limit to 2 lines */

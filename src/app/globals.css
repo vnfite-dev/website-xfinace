@@ -126,11 +126,19 @@
 }
 
 .bg-grad {
-  background: linear-gradient(to left, #FFB8A5, #FF6262);
+  background: linear-gradient(to bottom, #FF4142, #992728);
+}
+
+.bg-ios {
+  background: linear-gradient(to top, #DF6A00, #FFED8F);
 }
 
 .shadow-custom {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.text-main-color {
+  color: #C40000;
 }
 
 .bg-main-color {
