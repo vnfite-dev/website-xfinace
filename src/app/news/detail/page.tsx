@@ -190,7 +190,7 @@ const page = () => {
                                 />
                             </div>
                             <div className="w-full flex flex-col justify-center">
-                                <div className='ml-2'>
+                                <div className='ml-2 mt-2'>
                                     <div className="font-bold text-sm md:text-[18px] leading-6 md:leading-[27px] tracking-normal text-justify text-[#374151]">
                                         Chiều 10/12/2025 tại Hội Nghị quốc tế
                                         HYGH, X-Finance hợp tác với tập đoàn ABC
@@ -221,7 +221,7 @@ const page = () => {
                                 />
                             </div>
                             <div className="w-full flex flex-col justify-center">
-                                <div className='ml-2'>
+                                <div className='ml-2 mt-2'>
                                     <div className="font-bold text-sm md:text-[18px] leading-6 md:leading-[27px] tracking-normal text-justify text-[#374151]">
                                         Chiều 10/12/2025 tại Hội Nghị quốc tế
                                         HYGH, X-Finance hợp tác với tập đoàn ABC
@@ -252,7 +252,7 @@ const page = () => {
                                 />
                             </div>
                             <div className="w-full flex flex-col justify-center">
-                                <div className='ml-2'>
+                                <div className='ml-2 mt-2'>
                                     <div className="font-bold text-sm md:text-[18px] leading-6 md:leading-[27px] tracking-normal text-justify text-[#374151]">
                                         Chiều 10/12/2025 tại Hội Nghị quốc tế
                                         HYGH, X-Finance hợp tác với tập đoàn ABC
