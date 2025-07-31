@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     absolute: "X-Finance - Nền tảng cho vay có thế chấp của VNFITE",
   },
   description: "X-Finance - Sản phẩm cho vay có thế chấp của VNFITE",
+  // icons: {
+  //   icon: "/logo.svg",
+  // }
 };
 
 const inter = Inter({
@@ -33,12 +36,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        <meta name="robots" content="index, follow"></meta>
         <meta
           httpEquiv="Content-Security-Policy"
           content="img-src https: data:; upgrade-insecure-requests"
         />
       </Head>
-      <body className={`${inter.variable} relative`}>
+      <body className={`${inter.className} relative`}>
         <div className="fixed bottom-0 right-0 z-50">
 						<MessengerChatButton />
 						<ZaloChatWidget />

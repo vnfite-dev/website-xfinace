@@ -9,6 +9,6 @@ export default function robot(): MetadataRoute.Robots {
                 disallow: ["/api", "/admin", "/private"],
             },
         ],
-        sitemap: "https://xfinance.com/sitemap.xml",
+        sitemap: "https://xfinancelanding.vnfite.com.vn/sitemap.xml",
     }
 }
