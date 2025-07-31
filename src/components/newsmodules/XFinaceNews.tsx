@@ -8,7 +8,6 @@ const VideoItem = ({ item }: { item: { src: string; alt: string; overlayText: st
     const [isPlaying, setIsPlaying] = useState(false);
 
     const handleTogglePlay = () => {
-        console.log('isPlaying:', isPlaying);
         const video = videoRef.current;
         if (!video) return;
 
