@@ -78,13 +78,13 @@ export default function HomeLoanPackage() {
         </p>
         <div className="flex flex-col md:flex-row items-start justify-start md:justify-between mt-2 md:mt-6 gap-4 px-4">
           <div className="p-2 md:p-6">
-            <div className="px-4 md:p-8 rounded-full w-20 h-20 md:w-28 md:h-28 flex items-center justify-center">
+            <div className="px-4 md:p-8 rounded-full w-20 h-20 md:w-full md:h-28 flex items-center justify-center">
               <Image
                 src="/icons/home/percent.svg"
                 alt="interest rate"
                 width={48}
                 height={48}
-                className="w-full "
+                className=""
               />
             </div>
             <p className="font-bold text-lg leading-7 mb-4 text-justify">
@@ -96,13 +96,13 @@ export default function HomeLoanPackage() {
             </p>
           </div>
           <div className="p-2 md:p-6">
-            <div className="px-4 md:p-8 rounded-full w-20 h-20 md:w-28 md:h-28 flex items-center justify-center">
+            <div className="px-4 md:p-8 rounded-full w-20 h-20 md:w-full md:h-28 flex items-center justify-center">
               <Image
                 src="/icons/home/clock.svg"
                 alt="interest rate"
                 width={48}
                 height={48}
-                className="w-full "
+                className=""
               />
             </div>
             <p className="font-bold text-lg leading-7 mb-4 text-justify">
@@ -114,13 +114,13 @@ export default function HomeLoanPackage() {
             </p>
           </div>
           <div className="p-2 md:p-6">
-            <div className="px-4 md:p-8 rounded-full w-20 h-20 md:w-28 md:h-28 flex items-center justify-center">
+            <div className="px-4 md:p-8 rounded-full w-20 h-20 md:w-full md:h-28 flex items-center justify-center">
               <Image
                 src="/icons/home/approve.svg"
                 alt="interest rate"
                 width={48}
                 height={48}
-                className="w-full "
+                className=""
               />
             </div>
             <p className="font-bold text-lg leading-7 mb-4 text-justify">
