@@ -19,7 +19,7 @@ export default function InputCustom({
 }: InputCustomProps) {
   return (
     <div className={cn("relative w-full", className)}>
-      <p className="absolute bg-accent text-sm font-bold -top-2.5 left-4">
+      <p className="absolute bg-white text-sm font-bold -top-2.5 left-4">
         {label} <span className="text-main-color">*</span>
       </p>
       <Input

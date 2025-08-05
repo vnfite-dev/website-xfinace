@@ -88,7 +88,7 @@ export default function ServiceRegister() {
 
   return (
     <div className="w-full px-4 md:px-6 lg:px-8 py-4">
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row gap-x-6">
         <div className="w-full sm:w-1/2 px-4 sm:px-0">
           <p className="text-[16px] md:text-xl font-bold mb-4">Loại dịch vụ</p>
           <Select
@@ -164,7 +164,7 @@ export default function ServiceRegister() {
             <p>24 tháng</p>
           </div>
         </div>
-        <div className="w-full sm:w-1/2 flex flex-col items-center justify-center mt-14 sm:mt-0">
+        <div className="w-full sm:w-1/2 flex flex-col items-center justify-center mt-14 sm:mt-0 rounded-xl shadow-md">
           <p className="text-lg md:text-xl font-bold">Số tiền trả hằng tháng</p>
           <p className="text-sm md:text-lg italic text-muted-foreground mb-4 sm:mb-10">
             (Số tiền dự tính tham khảo)
