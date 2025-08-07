@@ -8,6 +8,8 @@ type InputCustomProps = {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   className?: string;
+  error?: string;
+  maxLength?: number;
 };
 
 export default function InputCustom({
@@ -16,6 +18,8 @@ export default function InputCustom({
   onChange,
   placeholder,
   className,
+  error,
+  maxLength
 }: InputCustomProps) {
   return (
     <div className={cn("relative w-full", className)}>
@@ -27,8 +31,10 @@ export default function InputCustom({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
+        maxLength={maxLength}
         className="w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-main-color p-5 text-[16px]"
       />
+            {error && <p className="text-red-500 text-sm mt-1">{error}</p>}  {/* Display error if exists */}
     </div>
   );
 }
