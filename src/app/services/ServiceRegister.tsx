@@ -17,6 +17,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import SelectCustom from "@/components/molecules/SelectCustom";
 
 type SelectOption = {
   id: string;
@@ -53,6 +54,17 @@ const LoanPackageOptions = [
   },
 ];
 
+const shopOptions = [
+  {
+    id: "1",
+    title: "4B Vương Thừa Vũ",
+  },
+  {
+    id: "2",
+    title: "Khác",
+  },
+];
+
 const formatMoney = (value: number) => {
   return value.toLocaleString("vi-VN", {
     style: "currency",
@@ -82,6 +94,7 @@ export default function ServiceRegister() {
     icon: "", // Initialize with an empty string
     description: "Vui lòng chọn loại dịch vụ để tiếp tục.",
   });
+  const [selectedOptionShop, setSelectedOptionShop] = useState<string | number>("");
   const [moneyList, setMoneyList] = useState<number>(5000000);
   const [termList, setTermList] = useState<number>(3);
   const [monthlyPayment, setMonthlyPayment] = useState<number>(0);
@@ -98,7 +111,7 @@ export default function ServiceRegister() {
     const newErrors: Partial<Info> = {};
 
     if (!info.phoneNumber) newErrors.phoneNumber = "Số điện thoại không được để trống.";
-    else if (info.phoneNumber.length !== 10) newErrors.phoneNumber = "Số điện thoại phải có 10 chữ số.";
+    else if (info.phoneNumber.length !== 10) newErrors.phoneNumber = "Số điện thoại không đúng định dạng.";
     else if (!/^\d{10}$/.test(info.phoneNumber)) newErrors.phoneNumber = "Số điện thoại chỉ được chứa chữ số.";
 
     if (!info.commune) newErrors.commune = "Phường/xã không được để trống.";
@@ -109,6 +122,14 @@ export default function ServiceRegister() {
     return Object.keys(newErrors).length === 0;
   };
 
+  const handleSelectChange = (value: string) => {
+    setSelectedOptionShop(value);
+    setInfo({ ...info, ["shop"]: value });
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      ["shop"]: "" // Clear the error for this specific field
+    }));
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, field: keyof Info) => {
     let value = e.target.value;
@@ -280,13 +301,13 @@ export default function ServiceRegister() {
               placeholder="Nhập thành phố"
               error={errors.city}
             />
-            <InputCustom
+
+            <SelectCustom
               label="Cửa hàng"
-              value={info.shop}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                handleInputChange(e, "shop")
-              }
-              placeholder="Nhập cửa hàng"
+              value={selectedOptionShop}
+              onChange={handleSelectChange}
+              options={shopOptions}
+              placeholder="Choose a package"
               error={errors.shop}
             />
           </div>
